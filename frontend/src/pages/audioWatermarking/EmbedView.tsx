@@ -95,9 +95,6 @@ const EmbedView = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="mb-3">
-                        <AudioPlayer src={outputUrl ?? undefined}/>
-                    </div>
                     <button type="submit" className="this-generate-btn" disabled={isLoading}>
                         {isLoading ? (
                             <span>Watermarking ...</span> // you can replace this with spinner animation
@@ -109,6 +106,9 @@ const EmbedView = () => {
                         )}
                     </button>
                 </form>
+                <div className="mb-3 mt-3">
+                    <AudioPlayer src={outputUrl ?? undefined}/>
+                </div>
                 <h2 className="tutorial-title mt-3">🚀 Quick Start Guide</h2>
                 <div className="this-tutorial-step">
                     <div className="step-number">1️⃣</div>
@@ -117,7 +117,7 @@ const EmbedView = () => {
                         <p>Select a <strong>.wav</strong> file from your computer that you want to protect with a
                             watermark.</p>
                         <p className="note">
-                        Only <code>.wav</code> files are supported.
+                            Only <code>.wav</code> files are supported.
                         </p>
                     </div>
                 </div>
