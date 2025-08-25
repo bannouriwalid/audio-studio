@@ -30,7 +30,9 @@ services:
       APP_PORT: 5002
     networks:
       - audio-net
-    command: python /root/app/main.py
+    working_dir: /root/app
+    entrypoint: ""
+    command: python main.py
 
   fastapi-gateway:
     image: walidbannouri/gateway:latest
