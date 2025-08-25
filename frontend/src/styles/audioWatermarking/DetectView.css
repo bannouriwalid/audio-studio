@@ -1,0 +1,110 @@
+/* DetectionResult.css */
+
+.detection-container {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+}
+
+.detection-success {
+    border-color: #16a34a; /* green-600 */
+    background-color: #ecfdf5; /* green-50 */
+}
+
+.detection-failure {
+    border-color: #dc2626; /* red-600 */
+    background-color: #fef2f2; /* red-50 */
+}
+
+.detection-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.detection-icon {
+    font-size: 2rem;
+}
+
+.detection-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.detection-subtext {
+    font-size: 0.95rem;
+    color: #6b7280; /* gray-600 */
+}
+
+.detection-info {
+    color: #1f2937; /* gray-800 */
+}
+
+.detection-info p {
+    margin-bottom: 0.5rem;
+}
+
+.decoded-bits {
+    background-color: #e5e7eb; /* gray-200 */
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: monospace;
+}
+
+.prob-summary-container {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summary-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1f2937;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.summary-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-3px);
+    border: 1px solid #3b82f6;
+}
+
+.summary-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #1f2937;
+}
+
+.summary-icon {
+    font-size: 1.3rem;
+}

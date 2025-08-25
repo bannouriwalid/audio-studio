@@ -1,0 +1,19 @@
+# Node / React
+frontend/node_modules
+frontend/build
+
+# Python
+back-end/**/__pycache__/
+back-end/**/*.pyc
+back-end/**/venv/
+back-end/**/.mypy_cache/
+back-end/**/.pytest_cache/
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# Models (optional if large)
+back-end/services/**/models/

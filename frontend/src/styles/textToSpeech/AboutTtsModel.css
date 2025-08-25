@@ -1,0 +1,26 @@
+.flags-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 16px; /* More spacing */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.flag-icon {
+    font-size: 2.2rem; /* Bigger flag icons */
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.flags-list li {
+    display: flex;
+    align-items: center;
+}
+
+.flags-list li:hover {
+    transform: translateY(-1px);
+}

@@ -1,0 +1,221 @@
+.intro-section {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.intro-title {
+    font-size: 2.8rem;
+    font-weight: 700; /* bold */
+    margin-bottom: 0.5em;
+}
+
+.intro-description {
+    font-size: 1.2rem;
+    font-weight: 300; /* thin */
+    max-width: 700px;
+    margin: 0 auto 2em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.bt-button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bt-button:active,
+.bt-button:hover {
+    outline: 0;
+}
+
+.bt-button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.bt-button:hover span {
+    background: none;
+}
+
+.bt-button:active {
+    transform: scale(0.9);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    align-items: center;      /* centers vertically (optional) */
+    height: 100%;             /* needed if you want vertical centering */
+}
+
+
+.grid-container {
+    width: min(75rem, 100%);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    gap: 2rem;
+}
+.card {
+    --grad: red, blue;
+    padding: 2.5rem;
+    background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
+    border-radius: 2rem;
+    display: grid;
+    grid-template-areas:
+        "title icon"
+        "content content"
+        "bar bar";
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    font-family: system-ui, sans-serif;
+    color: #444447;
+    box-shadow:
+            inset -2px 2px hsl(0 0% 100% / 1),
+            -20px 20px 40px hsl(0 0% 0% / 0.25);
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.card .title {
+    font-size: 1.3rem;
+    grid-area: title;
+    align-self: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card .icon {
+    grid-area: icon;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    background: linear-gradient(to right, var(--grad));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card .content {
+    grid-area: content;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    & > *:first-child { margin-top: 0; }
+    & > *:last-child { margin-bottom: 0; }
+}
+
+.card::after {
+    content: "";
+    grid-area: bar;
+    height: 2px;
+    background-image: linear-gradient(90deg, var(--grad));
+}
+
+.watermarking-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1 1 500px;
+    color: #333;
+    font-family: system-ui, sans-serif;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.text-content p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.image-content {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.features-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.tx-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+}

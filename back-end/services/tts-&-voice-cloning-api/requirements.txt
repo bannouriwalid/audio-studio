@@ -1,0 +1,4 @@
+Flask
+Flask-Cors
+soundfile
+python-dotenv

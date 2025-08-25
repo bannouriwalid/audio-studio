@@ -1,0 +1,80 @@
+.media-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fffaf2;
+    border-radius: 16px;
+    padding: 0.6rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    border: 3px solid #ff8800;
+}
+
+.media-buttons {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.media-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-icons {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #ff8800;
+    background: #fff3e0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button .button-icons {
+    background: #ffcc80;
+}
+
+.bt-button-text {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    color: #333;
+}
+
+.media-progress {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.progress-bar-wrapper {
+    flex: 1;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(to right, #ffcc80, #ff8800);
+    width: 0%;
+    transition: width 0.2s ease;
+}
+
+.progress-time-current,
+.progress-time-total {
+    font-size: 0.75rem;
+    color: #666;
+}

@@ -1,0 +1,55 @@
+version: '3.9'
+
+services:
+  audio-watermarking:
+    image: walidbannouri/audio-watermarking:latest
+    container_name: audio-watermarking-container
+    ports:
+      - "8000:8000"
+    environment:
+      APP_PORT: 8000
+    networks:
+      - audio-net
+
+  audio-deepfake:
+    image: walidbannouri/audio-deepfake:latest
+    container_name: audio-deepfake-container
+    ports:
+      - "5000:5000"
+    environment:
+      APP_PORT: 5000
+    networks:
+      - audio-net
+
+  tts-and-voice-cloning:
+    image: walidbannouri/tts-and-voice-cloning:latest
+    container_name: tts-and-voice-cloning-container
+    ports:
+      - "5002:5002"
+    environment:
+      APP_PORT: 5002
+    networks:
+      - audio-net
+    command: python /root/app/main.py
+
+  fastapi-gateway:
+    image: walidbannouri/gateway:latest
+    container_name: gateway-container
+    ports:
+      - "8080:8080"
+    environment:
+      APP_PORT: 8080
+    networks:
+      - audio-net
+
+  react-frontend:
+    image: walidbannouri/react-frontend:latest
+    container_name: react-frontend
+    ports:
+      - "5173:80"
+    networks:
+      - audio-net
+
+networks:
+  audio-net:
+    driver: bridge

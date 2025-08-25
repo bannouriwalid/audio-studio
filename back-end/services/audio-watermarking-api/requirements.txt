@@ -1,0 +1,10 @@
+fastapi
+python-dotenv
+uvicorn
+audioseal
+python-multipart
+torch
+torchaudio
+numpy
+soundfile
+

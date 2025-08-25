@@ -1,0 +1,81 @@
+.history-view {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    padding-bottom: 2rem;
+}
+
+.loading-text {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.empty-message {
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.empty-icon {
+    font-size: 3.5rem;
+    color: white;
+    animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.history-table {
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+.history-table th,
+.history-table td {
+    vertical-align: middle !important;
+}
+
+.reset-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.btn-reset {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
+
+.btn-reset:hover,
+.btn-reset:focus {
+    background-color: #c0392b !important;
+    box-shadow: 0 6px 20px rgba(192, 57, 43, 0.7);
+    outline: none;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+
+h1 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: #3d4d5e;
+}

@@ -1,0 +1,153 @@
+.voice-list {
+    height: 325px;
+    overflow-y: auto;
+    border: 2px solid #323232;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 4px 4px #323232;
+    padding: 8px;
+}
+
+.voice-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.voice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.file-list {
+    margin-top: 8px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    justify-content: space-between;
+}
+
+.file-name {
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+audio {
+    height: 28px;
+}
+
+.form-textarea2 {
+    height: 400px;
+    resize: none;
+    padding: 10px;
+    border: 2px solid #323232;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 4px 4px #323232;
+    outline: none;
+}
+
+/* From Uiverse.io by andrew-demchenk0 */
+.checkbox-container {
+    --input-focus: #2d8cf0;
+    --input-out-of-focus: #ccc;
+    --bg-color: #fff;
+    --bg-color-alt: #666;
+    --main-color: #323232;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--input-out-of-focus);
+    transition: all 0.3s;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: var(--input-focus);
+}
+
+.checkmark:after {
+    content: "";
+    width: 7px;
+    height: 15px;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    display: none;
+    border: solid var(--bg-color);
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.audio-file-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.button-toggle {
+    border-radius: 15px;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    gap: 3px
+}
+
+.button-toggle.expanded i {
+    transform: rotate(180deg);
+}
+
+.button-toggle:hover {
+    background-color: rgb(255, 69, 69);
+}
+
+
+
+

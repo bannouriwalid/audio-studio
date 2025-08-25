@@ -1,0 +1,10 @@
+torch
+torchaudio
+fairseq==0.12.2
+huggingface-hub==0.31.1
+safetensors==0.5.3
+soundfile==0.13.1
+flask
+flask_cors
+dotenv
+tensorboardX

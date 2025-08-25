@@ -1,0 +1,328 @@
+.dropzone {
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dropzone:hover {
+    background-color: #e9f5ff;
+}
+
+.dropzone i {
+    color: #007bff;
+    font-size: 32px;
+}
+
+.dropzone p {
+    font-weight: 500;
+    color: #333;
+}
+
+.recorder-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.recorder-controls .record-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    width: 35%;
+    border: none;
+    background: #1b1b1c;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.recorder-controls .record-btn:hover {
+    background: rgb(255, 69, 69);
+}
+
+.record-label {
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+}
+
+.file-list-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.file-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.file-list-item:hover {
+    background-color: #f5f9ff;
+}
+
+.this-file-name {
+    font-weight: 700;
+    color: #333;
+    margin-right: 10px;
+    flex-grow: 1;
+    word-break: break-all;
+}
+
+.file-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.this-audio {
+    height: 30px;
+    width: 250px;
+}
+
+.voice-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.voice-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+.edit-button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.edit-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+}
+
+.edit-button::before {
+    display: none;
+    content: "Rename";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+.delete-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.delete-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+}
+
+.delete-svgIcon path {
+    fill: white;
+}
+
+.delete-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+}
+
+.delete-button:hover .edit-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.delete-button::before {
+    display: none;
+    content: "Delete";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+}
+
+.delete-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+.accordion {
+    width: 70%;
+    margin: 0 auto; /* centers the element horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* space between different voice sections */
+}
+
+.accordion-item {
+    border-radius: 5px ;
+    overflow: hidden;
+    --bg-color: #e9ecef;
+    --main-color: #323232;
+    background-color: var(--bg-color);
+    box-shadow: 5px 5px var(--main-color);
+}
+
+.accordion-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3d3d3;
+    padding: 0.75rem 1.25rem;
+}
+
+
+.accordion-button-toggle {
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-weight: 600;
+    display: flex;
+}
+
+.accordion-button-toggle.expanded i {
+    transform: rotate(180deg);
+}
+
+.accordion-button-toggle:hover {
+    background-color: rgb(255, 69, 69);
+}
+
+.new-input {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    width: 60%;
+}
+
+.new-input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.add-voice-btn {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1em;
+    font-weight: 900;
+    font-size: 15px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 43px;
+    width: 35%;
+}
+
+.add-voice-btn:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.add-voice-btn:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.voice-input-row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 40%;
+    gap: 7px;
+}

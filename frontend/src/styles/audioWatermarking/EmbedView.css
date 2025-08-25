@@ -1,0 +1,150 @@
+.center-container {
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    align-items: center;      /* centers vertically (optional) */
+    height: 100%;             /* needed if you want vertical centering */
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 500; /* thin */
+    max-width: 800px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.watermark-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aw-special-row {
+    background: #ffffff;
+    border: 2px solid #323232;
+    border-radius: 5px;
+    box-shadow: 4px 4px #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centers content vertically */
+    align-items: center;       /* centers content horizontally */
+    width: 70%;
+    margin: 0 auto;            /* centers the whole block */
+    flex: 1;
+}
+
+.this-tutorial-step {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    background: linear-gradient(135deg, #ff9f43, #f368e0); /* orange to violet */
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.this-tutorial-step:hover {
+    transform: translateY(-3px);
+}
+
+.this-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 1000px;
+}
+
+.this-new-input {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    width: 100%;
+}
+
+.this-new-input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.add-this-btn {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1em;
+    font-weight: 900;
+    font-size: 15px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    height: 43px;
+    width: 30%;
+}
+
+.add-this-btn:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.add-this-btn:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.this-input-row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 40%;
+    gap: 7px;
+}
+
+.this-generate-btn {
+    border: #683FEA solid 3px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: medium;
+    margin-top: auto;
+    width: 25%;
+    height: 3.5em;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #683FEA;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+}
+
+.this-generate-btn:hover {
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+}
+
+.this-generate-btn:hover .text {
+    color: white;
+}
+
+.this-generate-btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+}
